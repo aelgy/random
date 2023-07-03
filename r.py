@@ -1,10 +1,11 @@
 import random
-
-r = random.randint(1, 100)
+start = (input('請決定隨機數字範圍開始值:'))
+end = input('請決定隨機數字範圍結束值:')
+r = random.randint(int(start), int(end))
 count = 0
 while True:
 	count += 1
-	n = input('請輸入輸字（1~100）: ')
+	n = input('請輸入數字：')
 	n = int(n)
 	if r == n:
 		print('終於猜對了')
